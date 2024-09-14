@@ -65,7 +65,7 @@ function ListTodosComponent() {
 
     return (
         <div className="container">
-            <h1>Things You Want To Do!</h1>
+            <h1>Pending Events</h1>
             {message && <div className="alert alert-warning">{message}</div>}
             <div>
                 <table className='table'>
@@ -73,7 +73,7 @@ function ListTodosComponent() {
                         <tr>
                             <th>Description</th>
                             <th>Is Done?</th>
-                            <th>Target Date</th>
+                            <th>Date</th>
                             <th>Delete</th>
                             <th>Update</th>
                         </tr>
@@ -96,7 +96,7 @@ function ListTodosComponent() {
                 </table>
 
                 </div>
-            <div className="btn btn-success m-5" onClick={addNewTodo}>Add New Todo</div>
+            <div className="btn btn-success m-5" onClick={addNewTodo}>Add New Event</div>
         </div>
     );
 }

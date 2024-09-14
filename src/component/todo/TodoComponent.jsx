@@ -68,7 +68,7 @@ export default function TodosComponent() {
 
     return (
         <div className="container">
-            <h1>Enter Todo Details</h1>
+            <h1>Enter your Events Details</h1>
             <div>
                 <Formik
                     initialValues={{ description, targetDate }}
@@ -92,7 +92,7 @@ export default function TodosComponent() {
                                     className="alert alert-warning"
                                 />
                                 <fieldset className="form-group">
-                                    <label>Description</label>
+                                    <label>Event Description</label>
                                     <Field type="text" className="form-control" name="description" />
                                 </fieldset>
                                 <fieldset className="form-group">

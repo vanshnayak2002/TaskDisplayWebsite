@@ -30,13 +30,13 @@ function WelcomeComponent() {
 
     return (
         <div className="WelcomeComponent">
-            <h1>Welcome {username}</h1>
+            <h1>Welcome to Riwaaz{username}</h1>
             <div>
-                Manage Your Todos - <Link to="/todos">Go here</Link>
+                Explore Your Events - <Link to="/todos">Go here</Link>
             </div>
-            <div>
+            {/* <div>
                 <button className="btn btn-success m-5" onClick={callHelloWorldRestApi}>Call Hello World</button>
-            </div>
+            </div> */}
             <div className='text-info'>
                 {message}
             </div>

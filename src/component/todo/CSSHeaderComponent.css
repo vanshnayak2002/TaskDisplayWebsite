@@ -1,0 +1,28 @@
+/* Styles for the header */
+.header {
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.navbar-brand {
+    font-size: 1.75rem; /* Larger font size for the brand name */
+    font-weight: bold; /* Bold text */
+    color: #343a40; /* Dark text color */
+}
+
+.navbar-nav .nav-link {
+    color: #495057; /* Text color for links */
+    font-size: 1rem; /* Font size for links */
+    margin-left: 15px; /* Spacing between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-left: auto; /* Push logout/login to the far right */
+}

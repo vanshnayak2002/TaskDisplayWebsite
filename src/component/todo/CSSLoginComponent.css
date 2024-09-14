@@ -1,0 +1,134 @@
+/* General styles for the login container */
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(F:\SpringNodeJs\todo-app\src\Img\bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+/* Overlay to darken the background image */
+.Login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: -1;
+}
+
+/* Styles for the header */
+.Login h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Error message styling */
+.errorMessage {
+    color: #d9534f;
+    background: #f2dede;
+    border: 1px solid #d9534f;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Container for the form */
+.LoginForm {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Styles for form labels and inputs */
+.LoginForm label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.LoginForm input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.LoginForm button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.LoginForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the third-party login options */
+.LoginForm h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.LoginForm .oauth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.LoginForm .oauth-buttons > * {
+    width: 100%;
+}
+
+/* Google and GitHub login button styling */
+.google-button,
+.github-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.google-button {
+    background: #4285F4;
+    color: #fff;
+}
+
+.google-button:hover {
+    background: #357ae8;
+}
+
+.github-button {
+    background: #333;
+    color: #fff;
+}
+
+.github-button:hover {
+    background: #222;
+}
