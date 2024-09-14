@@ -91,12 +91,7 @@ function ListTodosComponent() {
                                     <button className="btn btn-success" onClick={() => updateTodo(todo.id)}>Update</button>
                                 </td>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-
-                </div>
-            <div className="btn btn-success m-5" onClick={addNewTodo}>Add New Event</div>
+                        ))}clean
         </div>
     );
 }
